@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hs="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_avatar_adapter_album"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.yunio.videocapture.view.ImageViewNet
+        android:id="@+id/ive_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/blank"
+        android:scaleType="centerCrop"
+        hs:default_src="@drawable/image_default" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradual_bg"
+        android:gravity="right|bottom"
+        android:padding="5dp"
+        android:text="00:00"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

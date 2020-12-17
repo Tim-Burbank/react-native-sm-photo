@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridView
+        android:id="@+id/gv_local_image_folder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:horizontalSpacing="1dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:verticalSpacing="1dp" />
+
+    <com.yunio.videocapture.view.AnimationLayout
+        android:id="@+id/anim_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_folder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:background="@color/bg"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="invisible" />
+    </com.yunio.videocapture.view.AnimationLayout>
+
+</FrameLayout>

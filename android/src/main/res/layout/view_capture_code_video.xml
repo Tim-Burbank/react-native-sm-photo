@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+      android:id="@+id/inner_frame"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <SurfaceView
+        android:id="@+id/sv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </RelativeLayout>
+
+  </LinearLayout>
+  <FrameLayout
+    android:id="@+id/layout_button"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/black_alph_60"
+    android:layout_height="wrap_content">
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="124dp"
+      android:orientation="vertical">
+
+      <com.yunio.videocapture.view.ProgressView
+        android:id="@+id/pv_progress"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:visibility="gone"></com.yunio.videocapture.view.ProgressView>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+          android:id="@+id/tv_camera"
+          android:layout_width="66dp"
+          android:layout_height="66dp"
+          android:layout_centerInParent="true"
+          android:background="@drawable/bg_capture_normal" />
+
+        <ImageView
+          android:id="@+id/iv_reverse_camera"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/reverse_camera_margin_right"
+          android:src="@drawable/ic_reverse_camera" />
+      </RelativeLayout>
+      <!--<TextView-->
+      <!--android:id="@+id/tv_camera"-->
+      <!--android:layout_width="66dp"-->
+      <!--android:layout_height="66dp"-->
+      <!--android:layout_gravity="center"-->
+      <!--android:background="@drawable/bg_capture_normal" />-->
+    </FrameLayout>
+  </FrameLayout>
+
+
+  <TextView
+    android:id="@+id/tv_state"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/layout_button"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="11dp"
+    android:text="@string/press_start"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

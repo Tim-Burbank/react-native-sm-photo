@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewStub
+        android:id="@+id/vb_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/vb_video"
+        android:layout="@layout/video_player_view_item" />
+
+    <ViewStub
+        android:id="@+id/vb_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inflatedId="@+id/vb_image"
+        android:layout="@layout/view_avater_zoom" />
+    <FrameLayout
+      android:id="@+id/title_bar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height">
+
+        <ImageView
+          android:id="@+id/title_left_img"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_centerVertical="true"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:tint="@color/white"
+          android:src="@drawable/ic_back_yellow" />
+
+        <TextView
+          android:id="@+id/title_middle_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="@string/preview"
+          android:textColor="@color/text_white"
+          android:textSize="@dimen/text_size_major_x" />
+
+        <TextView
+          android:id="@+id/tv_complete"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="10dp"
+          android:gravity="center_vertical"
+          android:textColor="@color/text_white"
+          android:text="@string/upload" />
+
+      </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

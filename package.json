@@ -1,0 +1,27 @@
+{
+  "name": "react-native-sm-photo",
+  "version": "1.7.1",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "contributors": [],
+  "license": "ISC",
+  "rnpm": {
+    "android": {
+      "packageInstance": "new PhotoPluginPackage()"
+    },
+    "ios": {
+      "sharedLibraries": []
+    }
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.52.22"
+  }
+}

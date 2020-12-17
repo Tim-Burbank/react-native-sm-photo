@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/inner_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SurfaceView
+                android:id="@+id/sv_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_alph_60">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp">
+
+            <ImageView
+                android:id="@+id/tv_camera"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_capture_btn" />
+
+            <ImageView
+                android:id="@+id/iv_reverse_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/reverse_camera_margin_right"
+                android:src="@drawable/ic_reverse_camera" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:textColor="#FFD703"
+            android:textSize="@dimen/text_size_major" />
+    </RelativeLayout>
+
+</RelativeLayout>

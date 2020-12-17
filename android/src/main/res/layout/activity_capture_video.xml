@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yunio.videocapture.view.VideoCaptureView
+        android:id="@+id/vcv_capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_back_yellow" />
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yunio.videocapture.view.VideoCaptureCodeView
+        android:id="@+id/vcv_capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.yunio.videocapture.view.VideoCaptureCodeView>
+    <FrameLayout
+      android:id="@+id/layout_top"
+      android:layout_width="match_parent"
+      android:background="@color/black_alph_60"
+      android:layout_height="wrap_content">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+          android:id="@+id/layout_inner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <ImageView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back_yellow" />
+
+          <TextView
+            android:id="@+id/tv_read_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/please_read_code"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_major_x" />
+        </RelativeLayout>
+
+        <TextView
+          android:id="@+id/tv_code"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:text="3457"
+          android:textColor="@color/text_yellow"
+          android:textSize="@dimen/text_size_large"
+          android:textStyle="bold" />
+      </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

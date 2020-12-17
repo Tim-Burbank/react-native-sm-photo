@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hs="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_avatar_adapter_album"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yunio.videocapture.view.ImageViewNet
+        android:id="@+id/ive_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/blank"
+        android:scaleType="centerCrop"
+        hs:default_src="@drawable/image_default" />
+    <!--android:background="@drawable/gradual_bg"-->
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradual_bg"
+        android:gravity="right|bottom"
+        android:layout_alignParentBottom="true"
+        android:text="00:00"
+        android:paddingBottom="4dp"
+        android:paddingRight="6dp"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/iv_checked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_alph_80"
+        android:scaleType="center"
+        android:src="@drawable/ic_checked"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_select_number"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+		android:includeFontPadding="false"
+        android:background="@drawable/middle_transparent_point"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/text_black"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="center"
+        android:padding="6dp"
+        android:src="@drawable/ic_video" />
+
+    <TextView
+        android:id="@+id/tv_unselect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A7ffffff"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

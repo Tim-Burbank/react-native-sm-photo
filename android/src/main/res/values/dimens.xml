@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_normal">15sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_major">16sp</dimen>
+    <dimen name="text_size_major_x">18sp</dimen>
+    <dimen name="text_size_large">30sp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="page_margin_small">2dp</dimen>
+    <dimen name="reverse_camera_margin_right">50dp</dimen>
+
+</resources>

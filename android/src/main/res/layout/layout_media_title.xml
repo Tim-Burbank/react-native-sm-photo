@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@android:color/black" >
+
+    <ImageView
+        android:id="@+id/title_left_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_back_yellow" />
+
+    <TextView
+        android:id="@+id/title_middle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/camera"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_major_x" />
+
+    <com.yunio.videocapture.view.DropView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:text="@string/all_photo"
+        android:textColor="@color/text_white"
+        android:maxWidth="120dp"
+        android:maxLines="1"
+        android:textSize="@dimen/text_size_major" />
+
+</RelativeLayout>

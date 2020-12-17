@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_alph_80"
+    android:gravity="center_vertical"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/pause"
+            android:layout_width="31dp"
+            android:layout_height="33dp"
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/time_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <SeekBar
+            android:id="@+id/mediacontroller_progress"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:progressDrawable="@drawable/bg_bar_seek_video"
+            android:thumb="@drawable/video_seekbar"
+            android:thumbOffset="0dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

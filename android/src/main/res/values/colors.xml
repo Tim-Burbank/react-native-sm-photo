@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg">#FAFAFA</color>
+    <color name="text_black">#333333</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_yellow">#d8b434</color>
+    <color name="text_yellow2">#c8a834</color>
+    <color name="text_yellow3">#80D8B434</color>
+    <color name="black_alph_60">#99000000</color>
+    <color name="black_alph_80">#cc000000</color>
+    <color name="yellow_pressed">#55d8b434</color>
+    <color name="divider">#c7c7c7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="dim_foreground_dark">#ff007fff</color>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="blank"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="press_start">按住开始</string>
+    <string name="move_up_cancel">上移取消</string>
+    <string name="undo_cancel">松开取消</string>
+    <string name="please_read_code">请在录像中读出以下验证码</string>
+    <string name="preview">预览</string>
+    <string name="upload">完成</string>
+    <string name="camera">相机</string>
+    <string name="all_photo">所有照片</string>
+    <string name="total_x_photo">共: %1$d 张图</string>
+    <string name="send_image_max_count">本次最多可选择%1$d张图片</string>
+    <string name="send_image_min_count">本次最少选择%1$d张图片</string>
+    <string name="send_image_only_one">本次最多可选择1张图片</string>
+    <string name="wait_compress">正在保存视频文件, 请稍等&#8230;</string>
+    <string name="no_permission_for_camera">无法打开相机，请在设置中允许访问你的相机。</string>
+    <string name="no_permission_for_record">无法打开麦克风，请在设置中允许访问你的麦克风。</string>
+    <string name="no_permission_for_record_2">麦克风录音出现异常，请您检查相关设置。</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="storage_error">存储设备存在异常</string>
+    <string name="wait_compress_image">正在保存图片文件, 请稍等&#8230;</string>
+    <string name="need_permission_tips">应用需要获取相关权限，是否开启权限？</string>
+    <string name="no_permission_all">没有开启相关权限，导致部分功能无法使用，请前往设置开启</string>
+    <string name="all_video_photo">视频和照片</string>
+    <string name="all_video">所有视频</string>
+    <string name="wait_compress_image_video">正在保存文件, 请稍等&#8230;</string>
+    <string name="text_dialog_title">放弃当前视频/照片</string>
+    <string name="text_dialog_content">返回到拍摄界面后，已经拍摄的照片/视频将会自动清除，是否确认返回？</string>
+    <string name="cancel">取消</string>
+    <string name="Return">返回</string>
+    <string name="video_dialog_title">视频过长</string>
+    <string name="video_dialog_seconds">您选择的视频过长，点击确定后将自动截取视频前%d秒上传。</string>
+    <string name="video_dialog_minutes">您选择的视频过长，点击确定后将自动截取视频前%d分上传。</string>
+    <string name="confirm">确定</string>
+    <string name="bad_video">视频已损坏</string>
+    <string name="gif_error_tips">请选择不超过%1$s的Gif</string>
+    <string name="video_too_short">视频时间过短</string>
+</resources>
